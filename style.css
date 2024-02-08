@@ -266,3 +266,42 @@ ul.main-list {
     border-top: 5px solid #ddd;
     padding: 18px; /* Sama padding og í aðallistanum til samræmis */
   }
+  @media screen and (max-width: 768px) {
+    header, nav ul, .product, footer, .sidebar {
+        width: 100%;
+    }
+
+    header, footer {
+        text-align: center; /* Miðja texta aðeins í haus og fót */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center; /* Miðja valmyndarliði lóðrétt */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Halda auka bili á milli valmyndarliða */
+    }
+
+    .sidebar {
+        position: relative;
+        padding: 20px; /* Bæta við padding fyrir betra útlit */
+    }
+
+    .sidebar .btn {
+        margin: 10px 0; /* Halda bili milli hnappa */
+        padding: 10px 20px; /* Auka padding til að gera hnappa auðveldari í notkun */
+        min-height: 40px; /* Tryggja að hnappar séu nógu stórir fyrir snertiskjái */
+        width: auto; /* Leyfa hnöppum að aðlaga breidd sína að textanum */
+    }
+
+    .product {
+        padding: 20px; /* Bæta við padding fyrir betra rými */
+    }
+
+    /* Ef þú vilt frekari stíl fyrir .product til að meðhöndla fyrirsagnir, texta, osfrv. */
+    .product h2 {
+        margin-top: 20px; /* Bæta við efri bili fyrir h2 innan .product */
+    }
+}
